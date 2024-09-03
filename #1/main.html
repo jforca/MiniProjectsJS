@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Colors</title>
     <style>
-        #cyan {
-            background-color: cyan;
-        }
-        #yellow {
-            background-color: yellow;
-        }
-        #magenta {
-            background-color: magenta;
-        }
+      #cyan {
+        background-color: cyan;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+      #magenta {
+        background-color: magenta;
+      }
+
+      button {
+        border-radius: 30rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        font-size: 20px;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
     </style>
-</head>
-<body>
-    <h3>Color changer</h3>
-    <button id="cyan">Cyan</button>
-    <button id="yellow">Yellow</button>
-    <button id="magenta">Magenta</button>
-</body>
+  </head>
+  <body>
+    <h1 id="title" >Color changer</h1>
+    <div class="buttons">
+      <button id="cyan"onclick="setColor('cyan')">
+        Cyan
+      </button>
+      <button id="yellow" onclick="setColor('yellow')">
+        Yellow
+      </button>
+      <button id="magenta"onclick="setColor('magenta')">
+        Magenta
+      </button>
+      <button
+        id="random"
+        className="title"
+        onclick="randomColor(); randomTitle()"
+      >
+        Random
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
